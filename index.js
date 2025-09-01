@@ -12,6 +12,14 @@ connectDB();
 const app = express();
 app.use(express.json());
 
+// Enable CORS
+app.use(
+  cors({
+    origin: "https://handykruu.netlify.app", // ඔයාගේ frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
+
 // Routes
 app.use("/api/customers", customerRoutes);
 
