@@ -15,7 +15,7 @@ app.use(express.json());
 // Enable CORS
 app.use(
   cors({
-    origin: "https://handykruu.netlify.app", // ඔයාගේ frontend URL
+    origin: "https://handykruu-backend-express.vercel.app/", 
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
