@@ -12,10 +12,10 @@ connectDB();
 const app = express();
 app.use(express.json());
 
-// Enable CORS
+// CORS
 app.use(
   cors({
-    origin: "https://handykruu-backend-express.vercel.app/", 
+    origin: ["http://localhost:5173", "https://handykruu.netlify.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
